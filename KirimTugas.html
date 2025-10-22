@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kirim Tugas - Dampak Sosial Informatika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #113F67;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* === HEADER === */
+    header {
+      background-color: #000000;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffff;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      color: #cce0f5;
+      background-color: rgba(204, 224, 245, 0.1);
+    }
+
+    nav a.active {
+      font-weight: 700;
+      color: #FDF5AA;
+      border-bottom: 2px solid #FDF5AA;
+      padding-bottom: 3px;
+    }
+
+    /* === MAIN (KIRIM TUGAS) === */
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    section {
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+
+    section.form {
+      border-left: 5px solid #113F67;
+      padding-left: 20px;
+    }
+
+    h2 {
+      color: #113F67;
+      margin-bottom: 15px;
+      font-size: 1.6em;
+      font-weight: 600;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input, select, textarea {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 1em;
+      transition: 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #113F67;
+      box-shadow: 0 0 5px rgba(17, 63, 103, 0.3);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #113F67;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0d3152;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background-color: #FDF5AA;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95em;
+      color: #000000;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+      margin-top: 60px;
+    }
+
+    /* Animasi */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+      }
+
+      header h1 {
+        font-size: 1.3em;
+      }
+
+      nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      main {
+        padding: 30px 25px;
+        margin: 40px auto;
+        max-width: 95%;
+      }
+
+      section.form {
+        padding-left: 15px;
+      }
+
+      h2 {
+        font-size: 1.4em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 25px 20px;
+      }
+
+      nav a {
+        font-size: 0.9em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dampak Sosial Informatika</h1>
+    <nav>
+      <a href="Beranda.html">Beranda</a>
+      <a href="Materi.html">Materi</a>
+      <a href="Game.html">Game</a>
+      <a href="Tugas.html">Tugas</a>
+      <a href="Evaluasi.html">Evaluasi</a>
+      <a href="About.html">Tentang</a>
+      <a href="Login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form">
+      <h2>Kirim Tugas</h2>
+      <form action="#" method="POST" enctype="multipart/form-data">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+        <label for="kelas">Kelas</label>
+        <input type="text" id="kelas" name="kelas" placeholder="Masukkan kelas" required>
+
+        <label for="tugas">Pilih Tugas</label>
+        <select id="tugas" name="tugas" required>
+          <option value="">-- Pilih Tugas --</option>
+          <option value="tugas1">Tugas 1: Analisis Dampak Media Sosial</option>
+          <option value="tugas2">Tugas 2: Identifikasi Berita Hoax</option>
+          <option value="tugas3">Tugas 3: Pencegahan Cyberbullying</option>
+        </select>
+
+        <label for="file">Upload File Tugas</label>
+        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.jpg,.png" required>
+
+        <label for="deskripsi">Deskripsi Singkat (Opsional)</label>
+        <textarea id="deskripsi" name="deskripsi" placeholder="Jelaskan singkat tentang tugas yang dikirim"></textarea>
+
+        <button type="submit">Kirim Tugas</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Media Pembelajaran Informatika | Dibuat oleh Anggi Clementine (237111039)
+  </footer>
+
+</body>
+</html>

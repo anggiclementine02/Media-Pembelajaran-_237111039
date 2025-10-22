@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokok Materi - Dampak Sosial Informatika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #113F67;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* === HEADER === */
+    header {
+      background-color: #000000;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    header h1 {
+      font-size: 1.5em;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #ffff;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      color: #cce0f5;
+      background-color: rgba(204, 224, 245, 0.1);
+    }
+
+    nav a.active {
+      font-weight: 700;
+      color: #FDF5AA;
+      border-bottom: 2px solid #FDF5AA;
+      padding-bottom: 3px;
+    }
+
+    /* === MAIN (POKOK MATERI) === */
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    section {
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+
+    section.materi {
+      border-left: 5px solid #113F67;
+      padding-left: 20px;
+    }
+
+    h2 {
+      color: #113F67;
+      margin-bottom: 15px;
+      font-size: 1.6em;
+      font-weight: 600;
+    }
+
+    h3 {
+      color: #764ba2;
+      font-size: 1.3em;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+      color: #333;
+    }
+
+    ul {
+      margin: 10px 0 20px 20px;
+      color: #333;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* === FOOTER === */
+    footer {
+      background-color: #FDF5AA;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95em;
+      color: #000000;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+      margin-top: 60px;
+    }
+
+    /* Animasi */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsif */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px 20px;
+      }
+
+      header h1 {
+        font-size: 1.3em;
+      }
+
+      nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      main {
+        padding: 30px 25px;
+        margin: 40px auto;
+        max-width: 95%;
+      }
+
+      section.materi {
+        padding-left: 15px;
+      }
+
+      h2 {
+        font-size: 1.4em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 25px 20px;
+      }
+
+      nav a {
+        font-size: 0.9em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Dampak Sosial Informatika</h1>
+    <nav>
+      <a href="Beranda.html">Beranda</a>
+      <a href="Materi.html">Materi</a>
+      <a href="Game.html">Game</a>
+      <a href="Tugas.html">Tugas</a>
+      <a href="Evaluasi.html">Evaluasi</a>
+      <a href="About.html">Tentang</a>
+      <a href="Login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="materi">
+      <h2>Pokok Materi</h2>
+      
+      <h3>1. Media Sosial</h3>
+      <p><strong>Definisi:</strong> Media interaktif berbasis internet yang memungkinkan pengguna berkreasi, berbagi ide, dan informasi dalam komunitas virtual (Web 2.0).</p>
+      <p><strong>Karakteristik:</strong> Interaktif, pengguna dapat menciptakan konten (teks, foto, video), serta membuat profil dan jaringan sosial.</p>
+      <p><strong>Klasifikasi:</strong> Meliputi Blog (Wordpress), Forum (Stack Overflow), Microblog (Tumblr), Photo Sharing (Google Photos), Video Sharing (YouTube), Social Network (Facebook, Instagram), Social Gaming (Farmville), dan Social Bookmarking (Twitter, Pinterest).</p>
+      <p><strong>Perbedaan dengan Media Tradisional:</strong> Media sosial interaktif (banyak sumber ke banyak penerima), media tradisional terbatas interaksinya (satu sumber ke banyak penerima).</p>
+      <p><strong>Motivasi Pengguna:</strong> Berbagi informasi berharga, dukungan isu, interaksi sosial, partisipasi, dan membangun citra diri.</p>
+      <p><strong>Dampak:</strong></p>
+      <ul>
+        <li><strong>Positif:</strong> Kedekatan sosial, mempermudah komunikasi (pemasaran, layanan publik), rekrutmen karyawan, penegakan hukum, pertumbuhan aplikasi baru.</li>
+        <li><strong>Negatif:</strong> Pengaruh pada kesehatan emosional (iri, depresi, kecanduan), berita bohong (hoax), ujaran kebencian, pencurian data.</li>
+      </ul>
+
+      <h3>2. Mengkaji Kritis Informasi Media Sosial</h3>
+      <p><strong>Berita Bohong (Hoax):</strong> Informasi yang secara fakta tidak benar dan menyesatkan, bukan opini.</p>
+      <p><strong>Cara Mengidentifikasi Hoax:</strong></p>
+      <ul>
+        <li><strong>Mengembangkan Pemikiran Kritis:</strong> Hindari emosional, pertanyakan tujuan penulisan berita.</li>
+        <li><strong>Memeriksa Sumber Informasi:</strong> Cek alamat web (ekstensi domain seperti .go.id, .sch.id, .ac.id, .co.id, .com), waspadai CMS gratis.</li>
+        <li><strong>Melakukan Check and Recheck:</strong> Bandingkan dengan liputan media lain, terutama media mainstream yang kredibel.</li>
+        <li><strong>Cek Validitas Gambar:</strong> Gunakan alat seperti Google Image Search untuk melacak asal gambar dan mendeteksi manipulasi.</li>
+        <li><strong>Gunakan Akal Sehat:</strong> Waspadai berita yang terlalu sensasional atau tidak masuk akal.</li>
+      </ul>
+      <p><strong>Tindak Lanjut:</strong> Jangan menyebarkan informasi palsu; dapat merusak kredibilitas dan berpotensi melanggar hukum.</p>
+
+      <h3>3. Cyberbullying</h3>
+      <p><strong>Definisi:</strong> Perundungan di dunia maya menggunakan media digital.</p>
+      <p><strong>Jenis-Jenis:</strong> Ejekan, penyebaran rumor, pengecualian, ancaman, penyalahgunaan identitas, pelecehan seksual.</p>
+      <p><strong>Dampak:</strong></p>
+      <ul>
+        <li><strong>Korban:</strong> Depresi, kecemasan, penurunan akademik, isolasi sosial, pikiran bunuh diri.</li>
+        <li><strong>Pelaku:</strong> Agresif, masalah perilaku, masalah hukum, kesulitan sosial.</li>
+      </ul>
+      <p><strong>Pencegahan dan Penanganan:</strong></p>
+      <ul>
+        <li><strong>Pencegahan:</strong> Jangan publikasi informasi pribadi, pelajari pengaturan privasi (siapa yang bisa melihat profil/pesan, memblokir, membatasi komentar).</li>
+        <li><strong>Jika Korban:</strong> Jangan balas, simpan bukti, lapor orang dewasa terpercaya, blokir pelaku, lapor platform media sosial, lapor pihak berwenang jika perlu.</li>
+        <li><strong>Jika Menyaksikan:</strong> Jangan ikut-ikutan, tunjukkan dukungan, lapor orang dewasa/platform.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Media Pembelajaran Informatika | Dibuat oleh Anggi Clementine (237111039)
+  </footer>
+
+</body>
+</html>
